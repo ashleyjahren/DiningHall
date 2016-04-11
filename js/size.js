@@ -37,7 +37,7 @@ if(windowSize != newWindowSize){
 function loadHero(){
 
 	if(windowSize == 'large'){
-		$('body').load("../index.html"); 
+		// $('body').load("../index.html"); 
 
 	}
 	if(windowSize == 'small'){
