@@ -1,3 +1,7 @@
+<?php
+    $db = mysqli_connect('localhost:8889','line_length','password','line_length');
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -10,7 +14,21 @@
 </head>
 
 <body>
-<div id = hero>
+<?php
+				echo "hello world"; 
+                $query = "SELECT * FROM `TEst`;";
+                $result = mysqli_query($db, $query);
+
+                while($row = mysqli_fetch_assoc($result)) {
+                	$name = $row['a1'];
+              
+             
+               echo '$name'; 
+               
+
+                      // Display your datas on the page
+                }
+          ?>
 <h1> Select a Dining Hall</h1>
 </div>
 
