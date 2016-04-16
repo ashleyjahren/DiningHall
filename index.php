@@ -15,13 +15,14 @@
 
 <body>
 <?php
-				echo "hello world"; 
-                $query = "SELECT * FROM `TEst`;";
+
+                $query = "SELECT * FROM 'test';";
                 $result = mysqli_query($db, $query);
 
                 while($row = mysqli_fetch_assoc($result)) {
+ 
                 	$name = $row['a1'];
-              
+              echo "hello world"; 
              
                echo '$name'; 
                
