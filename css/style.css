@@ -1,9 +1,11 @@
 
-html,body 
-{ 
- padding:0; 
-  height:90%; 
-  border:0; 
+html,body {
+	padding:0; 
+	height:100%; 
+	width: 100%
+	border:0; 
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: #e6f2ff;
 } 
 
 #center {
@@ -27,6 +29,24 @@ table {
 
 }
 
+td {
+	width: 50%
+}
+
+.page-heading {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.top-bar {
+	height: 75px;
+	width: 100%;
+	background-color: #99caff;
+	display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .plex {
 	width: 40%; 
 }
@@ -36,6 +56,8 @@ button {
 	border-radius: 25px; 
 	width: 80%;  
 	min-height: 70px; 
+	font-size: 24px;
+	font-style: bold;
 }
 
 /* Style The Dropdown Button */
