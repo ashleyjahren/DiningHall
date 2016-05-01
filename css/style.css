@@ -2,7 +2,7 @@
 html,body {
 	padding:0; 
 	height:100%; 
-	width: 100%
+	width: 100%;
 	border:0; 
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	background-color: #e6f2ff;
@@ -10,6 +10,12 @@ html,body {
 
 #center {
 	text-align: center; 
+}
+
+#select-alt {
+	width: 50%;
+	height: 25px;
+	font-size: 14px;
 }
 
 #circle {
@@ -22,9 +28,9 @@ html,body {
 
 table {
 	text-align: center; 
-	padding: 20px;
-	padding-right: 10%; 
-	padding-left: 10%;  
+	#padding: 20px;
+	#padding-right: 10%; 
+	#padding-left: 10%;  
 	width: 100% ;
 
 }
@@ -57,7 +63,7 @@ button {
 	width: 80%;  
 	min-height: 70px; 
 	font-size: 24px;
-	font-style: bold;
+	font-weight: bold;
 }
 
 /* Style The Dropdown Button */
