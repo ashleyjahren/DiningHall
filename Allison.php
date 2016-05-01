@@ -29,7 +29,27 @@
 		</tr> 
 		<tr id = wait-time> 
 			<td> 
-				<strong> Wait Time: 5 minutes </strong> 
+				<strong> Number of people in last 5 minutes:
+					<?php
+					
+						$db = mysqli_connect('localhost','line_length','yxs1995121','test');
+							if(!$db) {
+								echo mysqli_connect_error();
+							}
+						else{
+							SET @interval = 5;
+							$query = "SELECT COUNT(time_stamp) FROM traffic_collect_person WHERE time_stamp between NOW() and (DATE_SUB(NOW(),INTERVAL @interval MINUTE)";
+							$result = mysqli_query($db, $query);
+
+							while($row = mysqli_fetch_assoc($result)) {
+								$name = $row['user_encrypt_id'];
+								 
+								echo $name."<br>".PHP_EOL; 
+								// Display your datas on the page
+							}
+						}
+					?>
+				</strong> 
 			</td> 
 		</tr> 
 		<tr id = hours> 
