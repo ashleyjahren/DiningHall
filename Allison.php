@@ -37,8 +37,7 @@
 								echo mysqli_connect_error();
 							}
 						else{
-							SET @interval = 5;
-							$query = "SELECT COUNT(time_stamp) FROM traffic_collect_person WHERE time_stamp between NOW() and (DATE_SUB(NOW(),INTERVAL @interval MINUTE)";
+							$query = "SELECT COUNT(time_stamp) FROM traffic_collect_person WHERE time_stamp BETWEEN NOW() and (DATE_SUB(NOW(),INTERVAL 5 MINUTE)";
 							$result = mysqli_query($db, $query);
 
 							while($row = mysqli_fetch_assoc($result)) {
