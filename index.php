@@ -1,5 +1,8 @@
 <?php
-    $db = mysqli_connect('localhost:8889','line_length','password','line_length');
+    $db = mysqli_connect('localhost','line_length','yxs1995121','test');
+	if(!$db) {
+		echo mysqli_connect_error();
+	}
 ?>
 
 <!DOCTYPE html>
@@ -15,21 +18,16 @@
 
 <body>
 <?php
+        $query = "SELECT * FROM traffic_collect_person";
+        $result = mysqli_query($db, $query);
 
-                $query = "SELECT * FROM 'test';";
-                $result = mysqli_query($db, $query);
-
-                while($row = mysqli_fetch_assoc($result)) {
- 
-                	$name = $row['a1'];
-              echo "hello world"; 
+        while($row = mysqli_fetch_assoc($result)) {
+			$name = $row['user_encrypt_id'];
              
-               echo '$name'; 
-               
-
-                      // Display your datas on the page
-                }
-          ?>
+            echo $name."<br>".PHP_EOL; 
+            // Display your datas on the page
+        }
+?>
 <div class = top-bar>
 	<h1 class = page-heading > Select a Dining Hall</h1>
 </div>
