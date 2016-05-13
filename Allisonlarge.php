@@ -12,25 +12,21 @@
 
 	
 <body>
-<!-- 	<div id = "align"> <a href="indexsmall.html">
+	<a href="index.php">
 		<img src = "img/menu.png">
 		</a>
-	<h1 id = "center">Allison Dining Hall </h1> </div> -->
+	<h1 id = "center">Allison Dining Hall </h1>
 	
 	<table> 
-		<tr>
-			<td id = "freeze">
-				<a href="indexsmall.html">
-		<img id = "element1" src = "img/menu.png" />
-		</a>
-	<h2 id = "element2">Allison Dining Hall </h2> 
-	
+		<!-- <tr>
+			<td>
+				<a href="index.php">
+					<button id = select-alt> Select another dining hall </button>
+				</a>
 			</td>
-		</tr>
+		</tr> -->
 		<tr> 
 			<td id = "circle"> 
-				<br> <br> <br> <br> <br> 
-				<img src = "img/circle.png" />
 				<p>Dining Hall Capacity </p> 
 			</td> 
 		</tr> 
@@ -65,7 +61,7 @@
 				Saturday - Sunday: 11:00 a.m. - 7:00 p.m. 
 			</td>
 		</tr> 
-		<!-- <tr> 
+		<tr> 
 			<td> 
 				<div class="dropdown">
 					<button class="dropbtn">Select Peak Hours</button>
@@ -80,11 +76,10 @@
 					</div>
 				</div>
 			</td> 
-		</tr>  -->
+		</tr> 
 		<tr> 
 			<td> 
-				<p> Put graph here </p>
-				<!-- <img src = "img/graph.jpg"> -->
+				<img src = "img/graph.jpg">
 			</td> 
 		</tr> 
 			</td> 

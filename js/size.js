@@ -6,7 +6,7 @@ var actualSize = 0;
 $(document).ready(function(){
 
 	checkBrowserSize();
-	setInterval('checkBrowserSize()', 1000); 
+	// setInterval('checkBrowserSize()', 1000); 
 
 });
 

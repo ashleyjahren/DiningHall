@@ -2,15 +2,11 @@
 html,body {
 	padding:0; 
 	height:100%; 
-	width: 100%;
+	width: 98%;
 	border:0; 
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	background-color: #e6f2ff;
 } 
-
-#center {
-	text-align: center; 
-}
 
 #select-alt {
 	width: 50%;
@@ -18,12 +14,31 @@ html,body {
 	font-size: 14px;
 }
 
+#freeze {
+	position: fixed;
+	width: 100%;
+	background-color: #fff; 
+	border: 0px; 
+	margin: 0px;
+}
+#element1 {
+display: inline; 
+margin-right: 10px; 
+
+}
+#element2 {
+display: inline-table;
+
+}
+
+
+
 #circle {
 	text-align: center;
-	background-image: url('../img/circle.png');
-	background-position: center; 
-	height: 300px; 
-	background-repeat: no-repeat;	
+	
+	height: 250px; 
+	width: 200px; 
+	
 }
 
 table {

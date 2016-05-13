@@ -43,39 +43,39 @@
 	</tr>
 	<tr>
 		<td>
-			<a href = "Allison.html">
+			<a href = "Allisonlarge.php">
 				<button>Allison</button>
 			</a>
 		</td>
 		<td>
-			<a href = "Allison.html">
+			<a href = "Allisonlarge.php">
 			<button>Sargent</button>
 			</a>
 		</td>
 	</tr>
 		<tr>
 		<td>
-			<a href = "Allison.html">
+			<a href = "Allisonlarge.php">
 			<button>Hinman</button>
 			</a>
 		</td>
 		<td>
-			<a href = "Allison.html">
+			<a href = "Allisonlarge.php">
 			<button class = "plex">Plex East</button>
 			</a>
-			<a href = "Allison.html">
+			<a href = "Allisonlarge.php">
 			<button class="plex">Plex West</button>
 			</a>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href = "Allison.html">
+			<a href = "Allisonlarge.php">
 			<button>Willard</button>
 			</a>
 		</td>
 		<td>
-			<a href = "Allison.html">
+			<a href = "Allisonlarge.php">
 			<button>Elder</button>
 			</a>
 		</td>
