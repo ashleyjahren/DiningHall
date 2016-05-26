@@ -28,59 +28,95 @@
             // Display your datas on the page
         }
 ?>
-<div class = top-bar>
-	<h1 class = page-heading > Select a Dining Hall</h1>
+
+ <div id="pre-header">
+    <div id="logo">
+
+    <a href="http://www.northwestern.edu" target="_blank"  id="AccountLogo_ID"   >
+            <img src="img/northwestern_tcm237-2064.png"  alt="Northwestern University" title="Northwestern University" border="0" />
+    </a>
+        <a href="/index.html" target="_self"  id="homeLink"   >
+            <img src="img/nw-dining_tcm237-1989.png"  alt="Dining Services" title="Dining Services" border="0" />
+    </a>
+    </div>
+    <div id="pre-header-links">
+    <a href="/people/feedback.html" target="_self"  id="csID"   >
+Give Feedback    </a>
+    <a href="/index.html" target="_self"  id="HomeLinkId"   >
+Home    </a>
+    </div>
+    <div id="header-txt">
+The mission of Northwestern Dining is to educate students, engage the community, and enrich the Northwestern experience by offering one of the most unique and pioneering campus meal programs in the nation.    </div>
 </div>
 
-<table>
-	<tr>
-		<td>
-			<h2 class = column-heading> South Campus <h2>
-		</td>
-		<td>
-			<h2 class = column-heading> North Campus <h2>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href = "Allisonlarge.php">
-				<button>Allison</button>
-			</a>
-		</td>
-		<td>
-			<a href = "Allisonlarge.php">
-			<button>Sargent</button>
-			</a>
-		</td>
-	</tr>
-		<tr>
-		<td>
-			<a href = "Allisonlarge.php">
-			<button>Hinman</button>
-			</a>
-		</td>
-		<td>
-			<a href = "Allisonlarge.php">
-			<button class = "plex">Plex East</button>
-			</a>
-			<a href = "Allisonlarge.php">
-			<button class="plex">Plex West</button>
-			</a>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href = "Allisonlarge.php">
-			<button>Willard</button>
-			</a>
-		</td>
-		<td>
-			<a href = "Allisonlarge.php">
-			<button>Elder</button>
-			</a>
-		</td>
-	</tr>
-</table>
+<div id="header">
+    <div id="ds">
 
+                <div class="social-top">
+			<a href="http://www.facebook.com/pages/nuCuisine-at-Northwestern-University/27558462805" target="_blank"   ><img src="img/facebookicon_tcm237-2575.png"  alt="Facebook" title="Facebook" border="0" /></a>
+                </div>    
+                <div class="social-top">
+			<a href="https://twitter.com/NU_Dining" target="_blank"   ><img src="img/twittericon_tcm237-2576.png"  alt="Twitter" title="Twitter" border="0" /></a>
+                </div>    
+                <div class="social-top">
+			<a href="http://northwesterndining.wordpress.com" target="_blank"   ><img src="img/wordpress_icon_tcm237-10383.png"  alt="wordpress_icon" title="wordpress_icon" border="0" /></a>
+                </div>    
+                <div class="social-top">
+			<a href="http://pinterest.com/nucuisine/" target="_blank"   ><img src="img/pinterest_tcm237-4542.png"  alt="pinterest" title="pinterest" border="0" /></a>
+                </div>    
+                <div class="social-top">
+			<a href="http://instagram.com/northwestern_dining" target="_blank"   ><img src="img/instagram_tcm237-2061.png"  alt="instagram.png" title="instagram.png" border="0" /></a>
+                </div>  
+                <br>  
+        
+    <div class = top-bar>
+	<h1 class = page-heading > Select a Dining Hall</h1>
+</div>
+    </div>
+
+</div>
+
+
+<div id = "container">
+	<!-- <hspace> <img id = "map" src = "img/Buttonmap.png"/> -->
+<br>
+<br>
+
+<div> <a href = "Allisonlarge.php">
+				<button id = "elder">Elder</button>
+			</a>
+</div>
+
+<div>
+	<a href = "Allisonlarge.php">
+			<button id = "sargent">Sargent</button>
+			</a>			
+</div>
+<div>
+	<a href = "Allisonlarge.php">
+			<button id = "plex1">Plex East</button>
+			</a>
+			<a href = "Allisonlarge.php">
+			<button id="plex2">Plex West</button>
+			</a>
+		</div>
+		<div>
+						<a href = "Allisonlarge.php">
+			<button id ="willard">Willard</button>
+			</a>
+		</div>
+		<div> 
+				<a href = "Allisonlarge.php">
+			<button id = "hinman">Hinman</button>
+			</a>
+		</div>
+		<div> 
+			<a href = "Allisonlarge.php">
+			<button id = "allison">Allison</button>
+			</a>
+		</div>
+
+
+</div>
 </body>
 </html>
