@@ -30,7 +30,7 @@
         ]);
 
         // Set chart options
-        var options = {'title':'People Entering Dining Hall',
+        var options = {'title':'Peak Hours',
                        'width':500,
                        'height':300};
 
@@ -141,6 +141,7 @@ The mission of Northwestern Dining is to educate students, engage the community,
 			</td>
 		</tr> 
 	</table>
+	<div id="chart_div"></div>
 	<table id = "t2">
 		<tr> 
 			<!-- <td> 
@@ -160,7 +161,7 @@ The mission of Northwestern Dining is to educate students, engage the community,
 		</tr> 
 	</table>
 		
-				<div id="chart_div"></div>
+				
 
 </body>
 </html>

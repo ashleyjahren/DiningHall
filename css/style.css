@@ -80,13 +80,18 @@ h1{
 /*END HEADER*/
 
 
+
 #chart_div {
 	display: block;
+	margin-right: auto; 
+	margin-left:auto;
 }
+
 #container {
-	background-image: url("/img/Buttonmap.png");
-	height: 1296px; 
+	background-image: url("/img/Buttonmap1.png");
+	height: 600px; 
 	background-repeat: no-repeat;
+	background-position: center;
 	width: 70%; 
 	margin-right: 15%; 
 	margin-left: 15%; 
@@ -127,33 +132,31 @@ display: inline-table;
 	width: 200px; 	
 }
 
-
-#elder {
+/*Home Page Button Placement*/
+/*#elder {
 	float: right;
 	margin-top: 20px; 
 	margin-right: 200px;  
 }
 
 #sargent {
-	margin-top: 300px; 
+	margin-top: 100px; 
 	float: right; 
 
-}
+}*/
 #plex1 {
-	width: 10%; 
-	margin-left: 50px; 
-	margin-top: 380px; 
+	width: 10% !important; 
+	
 
 }
 #plex2 {
-	width: 10%; 
-	margin-right: 30px;
-	margin-top: 380px; 
+	width: 10% !important; 
+
 
 }
 
 
-#willard {
+/*#willard {
 	margin-left: 360px;
 	margin-top: 350px; 
 }
@@ -168,8 +171,9 @@ display: inline-table;
 	margin-top: 300px;
 	margin-left: 90px;  
 }
-
+*/
 #container button {
+	margin-bottom: 20px; 
 	background-color: #4e2a84; 
 	border-radius: 25px; 
 	width: 20%;  
@@ -178,11 +182,14 @@ display: inline-table;
 	color: white; 
 	font-weight: bold;
 }
+/*End Dining Hall Button placement*/
+
+
 table {
 	text-align: center; 
-	padding: 20px;
-	padding-right: 10%; 
-	padding-left: 10%;  
+	padding: 10px;
+	padding-right: 15%; 
+	padding-left: 15%;  
 	width: 100% ;
 
 }
@@ -213,7 +220,3 @@ table {
  
 }
 
-
-#chart_div {
-	display: block;
-}

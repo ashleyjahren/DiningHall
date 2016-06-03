@@ -42,7 +42,7 @@
     <div id="pre-header-links">
     <a href="/people/feedback.html" target="_self"  id="csID"   >
 Give Feedback    </a>
-    <a href="/index.html" target="_self"  id="HomeLinkId"   >
+    <a href="/index.php" target="_self"  id="HomeLinkId"   >
 Home    </a>
     </div>
     <div id="header-txt">
@@ -114,12 +114,12 @@ The mission of Northwestern Dining is to educate students, engage the community,
 		</div>
 		<div> 
 				<a href = "Allisonlarge.php">
-			<button id = "hinman">Hinman</button>
+			<button id = "hinman">Allison</button>
 			</a>
 		</div>
 		<div> 
 			<a href = "Allisonlarge.php">
-			<button id = "allison">Allison</button>
+			<button id = "allison">Hinman</button>
 			</a>
 		</div>
 
