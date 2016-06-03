@@ -4,7 +4,8 @@ html,body {
 	height: 900px; 
 	width: 100%;
 	border:0; 
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	/*font-family: "Trebuchet MS", Helvetica, sans-serif;*/
+	font-family: Verdana, Helvetica, sans-serif; 
 	/*background-color: #e6f2ff;*/
 	background-color: #fff;
 } 
@@ -20,7 +21,7 @@ html,body {
 #pre-header { 
 	margin: 0px; 
 	text-align:right; 
-	font:12px Verdana, Geneva, sans-serif;
+	font:12px Verdana, Helvetica, sans-serif;
 	text-shadow:0 -1px 1px rgba(0,0,0,.5); 
 	background-color: #4e2a84; 
 	height: 20%;
@@ -72,8 +73,16 @@ html,body {
 	width:25px;
 	margin:10px 0 0 0;
 }
+h1{
+	font-weight: 500;
+	font-size: 27px;  
+}
 /*END HEADER*/
 
+
+#chart_div {
+	display: block;
+}
 #container {
 	background-image: url("/img/Buttonmap.png");
 	height: 1296px; 
@@ -109,13 +118,14 @@ display: inline-table;
 }
 
 #circle {
+	background-image: url("/img/square.png");
+	background-repeat: no-repeat;
+	background-position: center;
 	text-align: center;
-	
+	color: white; 
 	height: 250px; 
-	width: 200px; 
-	
+	width: 200px; 	
 }
-
 
 
 #elder {
@@ -141,14 +151,7 @@ display: inline-table;
 	margin-top: 380px; 
 
 }
-button {
-	background-color: #9989ba; 
-	border-radius: 25px; 
-	width: 20%;  
-	min-height: 70px; 
-	font-size: 24px;
-	font-weight: bold;
-}
+
 
 #willard {
 	margin-left: 360px;
@@ -166,18 +169,31 @@ button {
 	margin-left: 90px;  
 }
 
-
+#container button {
+	background-color: #4e2a84; 
+	border-radius: 25px; 
+	width: 20%;  
+	min-height: 70px; 
+	font-size: 24px;
+	color: white; 
+	font-weight: bold;
+}
 table {
 	text-align: center; 
-	#padding: 20px;
-	#padding-right: 10%; 
-	#padding-left: 10%;  
+	padding: 20px;
+	padding-right: 10%; 
+	padding-left: 10%;  
 	width: 100% ;
 
 }
 
-td {
-	width: 50%
+ button {
+	background-color: #4e2a84; 
+	border-radius: 25px; 
+	min-height: 70px; 
+	font-size: 24px;
+	color: white; 
+	font-weight: bold;
 }
 
 .page-heading {
@@ -198,47 +214,6 @@ td {
 }
 
 
-
-/* Style The Dropdown Button */
-.dropbtn {
-    background-color: #89cff0;
-    color: white;
-/*    padding-right: 80px; 
-    padding-left: 80px;*/ 
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-/*	padding-left: 20%; 
-	padding-right: 20%; */
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+#chart_div {
+	display: block;
 }

@@ -2,7 +2,43 @@
 
 <html lang="en">
 <head>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
 
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Hour');
+        data.addColumn('number', 'People');
+        data.addRows([
+          ['12pm', 275],
+          ['1pm', 190],
+          ['2pm', 80],
+          ['3pm', 75],
+          ['4pm', 140],
+		  ['5pm', 250]
+        ]);
+
+        // Set chart options
+        var options = {'title':'People Entering Dining Hall',
+                       'width':500,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
   <title>Allison Dining Hall</title>
 
   <link rel="stylesheet" href="css/style.css">
@@ -53,7 +89,7 @@ The mission of Northwestern Dining is to educate students, engage the community,
                 <br>  
         
     <div class = top-bar>
-	<h1 class = page-heading > Select a Dining Hall</h1>
+	<h1 class = page-heading > Allison Dining Hall</h1>
 </div>
     </div>
 
@@ -70,13 +106,8 @@ The mission of Northwestern Dining is to educate students, engage the community,
 		</tr> -->
 		<tr> 
 			<td id = "circle"> 
-				<p>Dining Hall Capacity </p> 
-			</td> 
-		</tr> 
-		<tr id = wait-time> 
-			<td> 
-				<strong> Number of people in last 5 minutes:
-					<?php
+				<p> Line Length: <br> </p>
+					<h1><?php
 					
 						$db = mysqli_connect('localhost','line_length','yxs1995121','test');
 							if(!$db) {
@@ -94,7 +125,12 @@ The mission of Northwestern Dining is to educate students, engage the community,
 							}
 						}
 					?>
-				</strong> 
+				 </h1> 
+			</td> 
+		</tr> 
+		<tr id = wait-time> 
+			<td> 
+				
 			</td> 
 		</tr> 
 		<tr id = hours> 
@@ -104,29 +140,27 @@ The mission of Northwestern Dining is to educate students, engage the community,
 				Saturday - Sunday: 11:00 a.m. - 7:00 p.m. 
 			</td>
 		</tr> 
+	</table>
+	<table id = "t2">
 		<tr> 
-			<td> 
+			<!-- <td> 
 				<div class="dropdown">
 					<button class="dropbtn">Select Peak Hours</button>
-					<div class="dropdown-content">
-						 <a href="#">Monday</a>
-						 <a href="#">Tuesday</a>
-						 <a href="#">Wednesday</a>
-						 <a href="#">Thursday</a>
-						 <a href="#">Friday</a>
-						 <a href="#">Saturday</a>
-						 <a href="#">Sunday</a>
-					</div>
+					<div class="dropdown-content"> -->
+						<td> <a href="#"><button>Monday</button></a> </td>
+						 <td><a href="#"><button>Tuesday</button></a></td>
+						<td> <a href="#"><button>Wednesday</button></a> </td>
+						  <td><a href="#"><button>Thursday</button></a> </td>
+						 <td><a href="#"><button>Friday</button></a> </td>
+						<td> <a href="#"><button>Saturday</button></a> </td>
+						<td> <a href="#"><button>Sunday</button></a> </td>
+		<!-- 			</div>
 				</div>
-			</td> 
+			</td>  -->
 		</tr> 
-		<tr> 
-			<td> 
-				<img src = "img/graph.jpg">
-			</td> 
-		</tr> 
-			</td> 
-		</tr> 
-	</table> 
+	</table>
+		
+				<div id="chart_div"></div>
+
 </body>
 </html>
