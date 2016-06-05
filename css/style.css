@@ -1,15 +1,23 @@
 
-html,body {
+html {
 	padding:0; 
 	height: 900px; 
 	width: 100%;
 	border:0; 
+	margin: 0; 
 	/*font-family: "Trebuchet MS", Helvetica, sans-serif;*/
-	font-family: Verdana, Helvetica, sans-serif; 
-	/*background-color: #e6f2ff;*/
+	font: 16px "Akkurat Pro Light","Arial Black",sans-serif;
+	/*font-family: Verdana, Helvetica, sans-serif; */
 	background-color: #fff;
 } 
+body {
+	height: 900px; 
+	padding: 0; 
+	width: 100%; 
+	border: 0; 
+	margin: 0; 
 
+}
 /* HEADER */
 
 #pre-header-links{
@@ -66,6 +74,7 @@ html,body {
 	height:10%;
 	position: relative;
 	padding-right: 220px; 
+	padding-top: 20px; 
 }
 
 .social-top {
@@ -73,18 +82,16 @@ html,body {
 	width:25px;
 	margin:10px 0 0 0;
 }
-h1{
-	font-weight: 500;
-	font-size: 27px;  
-}
+
 /*END HEADER*/
 
 
 
 #chart_div {
-	display: block;
-	margin-right: auto; 
-	margin-left:auto;
+	display: block ;
+	margin-right: auto !important; 
+	margin-left:auto !important;
+	width: 500px; 
 }
 
 #container {
@@ -132,18 +139,7 @@ display: inline-table;
 	width: 200px; 	
 }
 
-/*Home Page Button Placement*/
-/*#elder {
-	float: right;
-	margin-top: 20px; 
-	margin-right: 200px;  
-}
 
-#sargent {
-	margin-top: 100px; 
-	float: right; 
-
-}*/
 #plex1 {
 	width: 10% !important; 
 	
@@ -156,52 +152,34 @@ display: inline-table;
 }
 
 
-/*#willard {
-	margin-left: 360px;
-	margin-top: 350px; 
-}
-
-#hinman {
-	float: right; 
-	margin-right: 90px; 
-	margin-top: 50px; 
-}
-
-#allison {
-	margin-top: 300px;
-	margin-left: 90px;  
-}
-*/
 #container button {
 	margin-bottom: 20px; 
 	background-color: #4e2a84; 
 	border-radius: 25px; 
 	width: 20%;  
 	min-height: 70px; 
-	font-size: 24px;
+	font-size: 18px;
 	color: white; 
-	font-weight: bold;
+	font-weight: regular;
 }
-/*End Dining Hall Button placement*/
 
 
 table {
 	text-align: center; 
 	padding: 10px;
-	padding-right: 15%; 
-	padding-left: 15%;  
+	padding-right: 25%; 
+	padding-left: 25%;  
 	width: 100% ;
 
 }
 
  button {
 	background-color: #4e2a84; 
-	border-radius: 25px; 
-	min-height: 70px; 
-	font-size: 24px;
+	border-radius: 8px; 
+	min-height: 50px; 
+	font-size: 15px;
 	color: white; 
-	font-weight: bold;
-}
+	}
 
 .page-heading {
 	text-align: center;
@@ -220,3 +198,12 @@ table {
  
 }
 
+footer {
+	padding-top: 3%; 
+	padding-left: 10%; 
+	color: white; 
+	font-weight: regular; 
+	background-color: #4e2a84; 
+	padding-bottom: 3%;  
+
+}

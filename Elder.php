@@ -3,8 +3,11 @@
 <html lang="en">
 <head>
 
-  <title>Allison Dining Hall</title>
+  <title>Elder Dining Hall</title>
+<script type = "text/javascript" src = "js/size.js"></script>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
+<script type = "text/javascript" src = "js/gchart.js"></script>
   <link rel="stylesheet" href="css/style.css">
 
 
@@ -18,12 +21,12 @@
     <a href="http://www.northwestern.edu" target="_blank"  id="AccountLogo_ID"   >
             <img src="img/northwestern_tcm237-2064.png"  alt="Northwestern University" title="Northwestern University" border="0" />
     </a>
-        <a href="/index.html" target="_self"  id="homeLink"   >
+        <a href="/index.php" target="_self"  id="homeLink"   >
             <img src="img/nw-dining_tcm237-1989.png"  alt="Dining Services" title="Dining Services" border="0" />
     </a>
     </div>
     <div id="pre-header-links">
-    <a href="/people/feedback.html" target="_self"  id="csID"   >
+    <a href="/people/index.php" target="_self"  id="csID"   >
 Give Feedback    </a>
     <a href="index.php" target="_self"  id="HomeLinkId"   >
 Home    </a>
@@ -53,7 +56,8 @@ The mission of Northwestern Dining is to educate students, engage the community,
                 <br>  
         
     <div class = top-bar>
-	<h1 class = page-heading > Select a Dining Hall</h1>
+    	<br>
+	<h1 class = page-heading > Elder Dining Hall</h1>
 </div>
     </div>
 
@@ -70,13 +74,8 @@ The mission of Northwestern Dining is to educate students, engage the community,
 		</tr> -->
 		<tr> 
 			<td id = "circle"> 
-				<p>Dining Hall Capacity </p> 
-			</td> 
-		</tr> 
-		<tr id = wait-time> 
-			<td> 
-				<strong> Number of people in last 5 minutes:
-					<?php
+				<p> Line Length: <br> </p>
+					<h1><?php
 					
 						$db = mysqli_connect('localhost','line_length','yxs1995121','test');
 							if(!$db) {
@@ -94,39 +93,45 @@ The mission of Northwestern Dining is to educate students, engage the community,
 							}
 						}
 					?>
-				</strong> 
+				 </h1> 
+			</td> 
+		</tr> 
+		<tr id = wait-time> 
+			<td> 
+				
 			</td> 
 		</tr> 
 		<tr id = hours> 
 			<td> 
 				<strong> Hours of Operation: </strong><br> 
-				Monday - Friday: 7:30 a.m. - 7:00 p.m. <br> 
-				Saturday - Sunday: 11:00 a.m. - 7:00 p.m. 
+				Sunday - Thursday: 5:00 p.m. - 11:30 p.m. <br> 
 			</td>
 		</tr> 
+	</table>
+	<div id="chart_div"></div>
+	<table id = "t2">
 		<tr> 
-			<td> 
+			<!-- <td> 
 				<div class="dropdown">
 					<button class="dropbtn">Select Peak Hours</button>
-					<div class="dropdown-content">
-						 <a href="#">Monday</a>
-						 <a href="#">Tuesday</a>
-						 <a href="#">Wednesday</a>
-						 <a href="#">Thursday</a>
-						 <a href="#">Friday</a>
-						 <a href="#">Saturday</a>
-						 <a href="#">Sunday</a>
-					</div>
+					<div class="dropdown-content"> -->
+						<td> <button onclick="Monday()">Monday</button> </td>
+						 <td><button onclick="Tuesday()">Tuesday</button></a></td>
+						<td> <button onclick="Wednesday()">Wednesday</button></a> </td>
+						  <td><button onclick="Thursday()">Thursday</button></a> </td>
+						 <td><button onclick="Friday()">Friday</button></a> </td>
+						<td> <button onclick="Saturday()">Saturday</button></a> </td>
+						<td> <button onclick="Sunday()">Sunday</button></a> </td>
+		<!-- 			</div>
 				</div>
-			</td> 
+			</td>  -->
 		</tr> 
-		<tr> 
-			<td> 
-				<img src = "img/graph.jpg">
-			</td> 
-		</tr> 
-			</td> 
-		</tr> 
-	</table> 
+	</table>
+		
+				
+
 </body>
+<footer><p>Line Length Team 2016 <br>
+EECS 347 </p>
+</footer>
 </html>
