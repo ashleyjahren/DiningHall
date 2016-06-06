@@ -2,45 +2,12 @@
 
 <html lang="en">
 <head>
- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
 
-      // Load the Visualization API and the corechart package.
-      google.charts.load('current', {'packages':['corechart']});
-
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.charts.setOnLoadCallback(drawChart);
-
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-      function drawChart() {
-
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Hour');
-        data.addColumn('number', 'People');
-        data.addRows([
-          ['12pm', 275],
-          ['1pm', 190],
-          ['2pm', 80],
-          ['3pm', 75],
-          ['4pm', 140],
-		  ['5pm', 250]
-        ]);
-
-        // Set chart options
-        var options = {'title':'Peak Hours',
-                       'width':500,
-                       'height':300};
-
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
   <title>Allison Dining Hall</title>
+<script type = "text/javascript" src = "js/size.js"></script>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
+<script type = "text/javascript" src = "js/gchart.js"></script>
   <link rel="stylesheet" href="css/style.css">
 
 
@@ -54,12 +21,12 @@
     <a href="http://www.northwestern.edu" target="_blank"  id="AccountLogo_ID"   >
             <img src="img/northwestern_tcm237-2064.png"  alt="Northwestern University" title="Northwestern University" border="0" />
     </a>
-        <a href="/index.html" target="_self"  id="homeLink"   >
+        <a href="/index.php" target="_self"  id="homeLink"   >
             <img src="img/nw-dining_tcm237-1989.png"  alt="Dining Services" title="Dining Services" border="0" />
     </a>
     </div>
     <div id="pre-header-links">
-    <a href="/people/feedback.html" target="_self"  id="csID"   >
+    <a href="/people/index.php" target="_self"  id="csID"   >
 Give Feedback    </a>
     <a href="index.php" target="_self"  id="HomeLinkId"   >
 Home    </a>
@@ -89,6 +56,7 @@ The mission of Northwestern Dining is to educate students, engage the community,
                 <br>  
         
     <div class = top-bar>
+    	<br>
 	<h1 class = page-heading > Allison Dining Hall</h1>
 </div>
     </div>
@@ -148,13 +116,13 @@ The mission of Northwestern Dining is to educate students, engage the community,
 				<div class="dropdown">
 					<button class="dropbtn">Select Peak Hours</button>
 					<div class="dropdown-content"> -->
-						<td> <a href="#"><button>Monday</button></a> </td>
-						 <td><a href="#"><button>Tuesday</button></a></td>
-						<td> <a href="#"><button>Wednesday</button></a> </td>
-						  <td><a href="#"><button>Thursday</button></a> </td>
-						 <td><a href="#"><button>Friday</button></a> </td>
-						<td> <a href="#"><button>Saturday</button></a> </td>
-						<td> <a href="#"><button>Sunday</button></a> </td>
+						<td> <button onclick="Monday()">Monday</button> </td>
+						 <td><button onclick="Tuesday()">Tuesday</button></a></td>
+						<td> <button onclick="Wednesday()">Wednesday</button></a> </td>
+						  <td><button onclick="Thursday()">Thursday</button></a> </td>
+						 <td><button onclick="Friday()">Friday</button></a> </td>
+						<td> <button onclick="Saturday()">Saturday</button></a> </td>
+						<td> <button onclick="Sunday()">Sunday</button></a> </td>
 		<!-- 			</div>
 				</div>
 			</td>  -->
@@ -164,4 +132,7 @@ The mission of Northwestern Dining is to educate students, engage the community,
 				
 
 </body>
+<footer><p>Line Length Team 2016 <br>
+EECS 347 </p>
+</footer>
 </html>
