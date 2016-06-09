@@ -4,38 +4,73 @@
 <head>
 
   <title>Allison Dining Hall</title>
+<!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
 
-  <link rel="stylesheet" href="css/style.css">
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Hour');
+        data.addColumn('number', 'People');
+        data.addColumn({type:'string', role:'style'});
+        data.addRows([
+           ['12pm', 275, 'color: silver'],
+              ['1pm', 190, 'color: silver'],
+              ['2pm', 80, 'color: silver'],
+              ['3pm', 75, 'color: silver'],
+              ['4pm', 140, 'color: silver'],
+              ['5pm', 250, 'color: silver']
+              ]);
+
+        // Set chart options
+        var options = {'title':'People Entering Dining Hall',
+        				legend: 'none', 
+                       'width':300,
+                       'height':200,
+		hAxis: {
+          title: 'Time'
+        },
+              vAxis: {
+          title: 'Number of People',
+          ticks: [0, 100, 200, 300, 400]
+        }
+    };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  <link rel="stylesheet" href="css/stylesmall.css">
 
 
 </head>
 
 	
 <body>
-<!-- 	<div id = "align"> <a href="indexsmall.html">
-		<img src = "img/menu.png">
-		</a>
-	<h1 id = "center">Allison Dining Hall </h1> </div> -->
 	
-	<table> 
-		<tr>
-			<td id = "freeze">
-				<a href="indexsmall.html">
+	<div class = top-bar>
+
+	<h1 class = page-heading >		<a href="indexsmall.html">
 		<img id = "element1" src = "img/menu.png" />
-		</a>
-	<h2 id = "element2">Allison Dining Hall </h2> 
-	
-			</td>
-		</tr>
+		</a> Allison Dining Hall</h1>
+</div>
+	<table> 
+
 		<tr> 
 			<td id = "circle"> 
-				<br> <br> <br> <br> <br> 
-				<img src = "img/circle.png" />
 				<p>Dining Hall Capacity </p> 
-			</td> 
-		</tr> 
-		<tr id = wait-time> 
-			<td> 
 				<strong> Number of people in last 5 minutes:
 					<?php
 					
@@ -58,6 +93,7 @@
 				</strong> 
 			</td> 
 		</tr> 
+
 		<tr id = hours> 
 			<td> 
 				<strong> Hours of Operation: </strong><br> 
@@ -65,30 +101,25 @@
 				Saturday - Sunday: 11:00 a.m. - 7:00 p.m. 
 			</td>
 		</tr> 
-		<!-- <tr> 
-			<td> 
-				<div class="dropdown">
-					<button class="dropbtn">Select Peak Hours</button>
-					<div class="dropdown-content">
-						 <a href="#">Monday</a>
-						 <a href="#">Tuesday</a>
-						 <a href="#">Wednesday</a>
-						 <a href="#">Thursday</a>
-						 <a href="#">Friday</a>
-						 <a href="#">Saturday</a>
-						 <a href="#">Sunday</a>
-					</div>
-				</div>
-			</td> 
-		</tr>  -->
+		
 		<tr> 
 			<td> 
-				<p> Put graph here </p>
-				<!-- <img src = "img/graph.jpg"> -->
+				<div id="chart_div"></div>
 			</td> 
 		</tr> 
-			</td> 
-		</tr> 
+
 	</table> 
+	<table id = "t2">
+		<tr> 
+						<td> <button class = "b1">Mon</button> </td>
+						 <td><button class = "b1">Tues</button></a></td>
+						<td> <button class = "b1">Wed</button></a> </td>
+						  <td><button class = "b1">Thurs</button></a> </td>
+						 <td><button class = "b1">Fri</button></a> </td>
+						<td> <button class = "b1">Sat</button></a> </td>
+						<td> <button class = "b1">Sun</button></a> </td>
+
+		</tr> 
+	</table>
 </body>
 </html>

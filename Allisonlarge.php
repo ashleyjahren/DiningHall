@@ -112,10 +112,6 @@ The mission of Northwestern Dining is to educate students, engage the community,
 	<div id="chart_div"></div>
 	<table id = "t2">
 		<tr> 
-			<!-- <td> 
-				<div class="dropdown">
-					<button class="dropbtn">Select Peak Hours</button>
-					<div class="dropdown-content"> -->
 						<td> <button onclick="Monday()">Monday</button> </td>
 						 <td><button onclick="Tuesday()">Tuesday</button></a></td>
 						<td> <button onclick="Wednesday()">Wednesday</button></a> </td>
@@ -123,9 +119,7 @@ The mission of Northwestern Dining is to educate students, engage the community,
 						 <td><button onclick="Friday()">Friday</button></a> </td>
 						<td> <button onclick="Saturday()">Saturday</button></a> </td>
 						<td> <button onclick="Sunday()">Sunday</button></a> </td>
-		<!-- 			</div>
-				</div>
-			</td>  -->
+
 		</tr> 
 	</table>
 		
