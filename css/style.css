@@ -119,15 +119,6 @@ body {
 }
 
 
-#element1 {
-display: inline; 
-margin-right: 10px; 
-
-}
-#element2 {
-display: inline-table;
-
-}
 
 #circle {
 	background-image: url("/img/square.png");
